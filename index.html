@@ -6,7 +6,7 @@
     <title>Response Page</title>
 </head>
 <body>
-    <h1>MasterBrew Loves this Endpoint Response</h1>
+    <h1>  MasterBrew Loves this Endpoint Response </h1>
     <div id="response"></div>
 
     <script>
@@ -14,8 +14,8 @@
             const urlParams = new URLSearchParams(window.location.search);
             const endpoint = urlParams.get('endpoint');
             
-            if (endpoint === 'test123') {
-                document.getElementById('response').innerText = 'This is the response for the /test123 endpoint.';
+            if (endpoint === 'MasterBrew.io') {
+                document.getElementById('response').innerText = 'This is the response for the /MasterBrew.io endpoint.';
             } else {
                 document.getElementById('response').innerText = 'Unknown endpoint.';
             }
